@@ -1,0 +1,262 @@
+<html vid="0"><head vid="1">
+    <meta charset="UTF-8" vid="2">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" vid="3">
+    <title vid="4">Booking Confirmation | HaasCharter</title>
+    <script src="https://cdn.tailwindcss.com/3.4.17" vid="5"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web" vid="6"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&amp;display=swap" rel="stylesheet" vid="7">
+    <script vid="8">
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        charcoal: '#1A1A1A',
+                        darker: '#0f0f0f',
+                        gold: '#C9A96E',
+                        goldHover: '#b5965e',
+                        lightGray: '#B0B0B0',
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style vid="9">
+        body {
+            background-color: #0f0f0f;
+            color: #FFFFFF;
+        }
+        .glass-panel {
+            background: rgba(26, 26, 26, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .border-gold-gradient {
+            border-image: linear-gradient(to right, #C9A96E, transparent) 1;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-gold selection:text-charcoal" vid="10">
+
+    
+    <nav class="w-full z-50 bg-charcoal border-b border-white/5 py-6" vid="11">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center" vid="12">
+            <div class="flex items-center gap-3" vid="13">
+                <i class="ph ph-airplane-tilt text-3xl text-gold" vid="14"></i>
+                <span class="text-2xl font-light tracking-widest uppercase text-white" vid="15">Haas<span class="font-bold text-gold" vid="16">Charter</span></span>
+            </div>
+            <div class="flex items-center gap-6" vid="17">
+                <span class="text-[10px] uppercase tracking-[0.3em] text-gray-500" vid="18">Booking Reference</span>
+                <span class="text-gold font-mono tracking-widest border border-gold/30 px-3 py-1 rounded" vid="19">HC-9928-X</span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-5xl mx-auto px-6 py-20" vid="20">
+        
+        <header class="mb-16 animate-fade-in-up" vid="21">
+            <div class="inline-flex items-center gap-2 text-gold mb-4" vid="22">
+                <i class="ph ph-check-circle text-2xl" vid="23"></i>
+                <span class="text-xs uppercase tracking-[0.4em] font-bold" vid="24">Request Confirmed</span>
+            </div>
+            <h1 class="text-5xl md:text-6xl font-light mb-4" vid="25">Your flight is <span class="italic font-serif text-gold" vid="26">reserved.</span></h1>
+            <p class="text-gray-400 text-lg max-w-2xl font-light" vid="27">
+                Your itinerary for the Gulfstream G550 has been processed. A dedicated flight coordinator will contact you shortly to finalize handling details.
+            </p>
+        </header>
+
+        <div class="grid lg:grid-cols-3 gap-12" vid="28">
+            
+            <div class="lg:col-span-2 space-y-12 animate-fade-in-up" style="animation-delay: 0.1s;" vid="29">
+                
+                <section class="glass-panel p-8" vid="30">
+                    <h2 class="text-xs uppercase tracking-widest text-gold mb-8 border-b border-white/10 pb-4" vid="31">Flight Itinerary</h2>
+                    
+                    <div class="flex flex-col md:flex-row justify-between items-center gap-8 relative" vid="32">
+                        <div class="text-center md:text-left" vid="33">
+                            <span class="block text-4xl font-light text-white mb-1" vid="34">KTEB</span>
+                            <span class="block text-xs uppercase tracking-widest text-gray-500" vid="35">Teterboro, NJ</span>
+                            <span class="block text-sm text-gray-400 mt-4" vid="36">Oct 24, 2024 — 09:00 EDT</span>
+                        </div>
+
+                        <div class="flex flex-col items-center flex-1" vid="37">
+                            <div class="w-full flex items-center gap-4 px-4" vid="38">
+                                <div class="h-[1px] flex-1 bg-gradient-to-r from-transparent via-gold/50 to-gold" vid="39"></div>
+                                <i class="ph ph-airplane-in-flight text-2xl text-gold" vid="40"></i>
+                                <div class="h-[1px] flex-1 bg-gradient-to-l from-transparent via-gold/50 to-gold" vid="41"></div>
+                            </div>
+                            <span class="text-[10px] uppercase tracking-[0.2em] text-gray-500 mt-2" vid="42">6h 45m Nonstop</span>
+                        </div>
+
+                        <div class="text-center md:text-right" vid="43">
+                            <span class="block text-4xl font-light text-white mb-1" vid="44">EGLL</span>
+                            <span class="block text-xs uppercase tracking-widest text-gray-500" vid="45">London Heathrow, UK</span>
+                            <span class="block text-sm text-gray-400 mt-4" vid="46">Oct 24, 2024 — 20:45 BST</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6 pt-8 border-t border-white/5" vid="47">
+                        <div vid="48">
+                            <span class="block text-[10px] uppercase tracking-widest text-gray-500 mb-1" vid="49">Aircraft</span>
+                            <span class="text-white text-sm" vid="50">Gulfstream G550</span>
+                        </div>
+                        <div vid="51">
+                            <span class="block text-[10px] uppercase tracking-widest text-gray-500 mb-1" vid="52">Tail Number</span>
+                            <span class="text-white text-sm" vid="53">N35RZ</span>
+                        </div>
+                        <div vid="54">
+                            <span class="block text-[10px] uppercase tracking-widest text-gray-500 mb-1" vid="55">Terminal</span>
+                            <span class="text-white text-sm" vid="56">Signature Flight Support</span>
+                        </div>
+                        <div vid="57">
+                            <span class="block text-[10px] uppercase tracking-widest text-gray-500 mb-1" vid="58">WIFI</span>
+                            <span class="text-white text-sm" vid="59">KA-Band Enabled</span>
+                        </div>
+                    </div>
+                </section>
+
+                
+                <section class="glass-panel p-8" vid="60">
+                    <h2 class="text-xs uppercase tracking-widest text-gold mb-8 border-b border-white/10 pb-4" vid="61">Passenger Manifest</h2>
+                    <div class="space-y-6" vid="62">
+                        <div class="flex justify-between items-center" vid="63">
+                            <div class="flex items-center gap-4" vid="64">
+                                <div class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center border border-white/10" vid="65">
+                                    <i class="ph ph-user text-gray-400" vid="66"></i>
+                                </div>
+                                <div vid="67">
+                                    <span class="block text-white font-medium" vid="68">Alexander Sterling</span>
+                                    <span class="text-xs text-gray-500 uppercase tracking-widest" vid="69">Lead Passenger</span>
+                                </div>
+                            </div>
+                            <span class="text-xs text-gold uppercase tracking-widest px-3 py-1 border border-gold/20" vid="70">Verified</span>
+                        </div>
+                        <div class="flex justify-between items-center" vid="71">
+                            <div class="flex items-center gap-4" vid="72">
+                                <div class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center border border-white/10" vid="73">
+                                    <i class="ph ph-user text-gray-400" vid="74"></i>
+                                </div>
+                                <div vid="75">
+                                    <span class="block text-white font-medium" vid="76">Julianna Sterling</span>
+                                    <span class="text-xs text-gray-500 uppercase tracking-widest" vid="77">Passenger</span>
+                                </div>
+                            </div>
+                            <span class="text-xs text-gray-500 uppercase tracking-widest" vid="78">Passport Req.</span>
+                        </div>
+                    </div>
+                </section>
+
+                
+                <section class="grid md:grid-cols-2 gap-8" vid="79">
+                    <div class="glass-panel p-8 group hover:border-gold/30 transition-colors" vid="80">
+                        <i class="ph ph-fork-knife text-2xl text-gold mb-4" vid="81"></i>
+                        <h3 class="text-white font-light text-lg mb-2" vid="82">Catering Requirements</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed" vid="83">Custom menu requested: Organic seasonal selections with specific vintage wine pairing.</p>
+                    </div>
+                    <div class="glass-panel p-8 group hover:border-gold/30 transition-colors" vid="84">
+                        <i class="ph ph-car text-2xl text-gold mb-4" vid="85"></i>
+                        <h3 class="text-white font-light text-lg mb-2" vid="86">Ground Transport</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed" vid="87">Chauffeur service requested for arrival at EGLL to Mayfair destination.</p>
+                    </div>
+                </section>
+            </div>
+
+            
+            <aside class="space-y-8 animate-fade-in-up" style="animation-delay: 0.2s;" vid="88">
+                <div class="bg-charcoal border border-white/10 p-8" vid="89">
+                    <h2 class="text-xs uppercase tracking-widest text-gold mb-8 border-b border-white/10 pb-4" vid="90">Cost Summary</h2>
+                    
+                    <div class="space-y-4 mb-8" vid="91">
+                        <div class="flex justify-between text-sm" vid="92">
+                            <span class="text-gray-500" vid="93">Flight Time (6.75 hrs)</span>
+                            <span class="text-white font-light" vid="94">$67,500.00</span>
+                        </div>
+                        <div class="flex justify-between text-sm" vid="95">
+                            <span class="text-gray-500" vid="96">Fuel Surcharge</span>
+                            <span class="text-white font-light" vid="97">$0.00</span>
+                        </div>
+                        <div class="flex justify-between text-sm" vid="98">
+                            <span class="text-gray-500" vid="99">International Fees</span>
+                            <span class="text-white font-light" vid="100">$2,450.00</span>
+                        </div>
+                        <div class="flex justify-between text-sm" vid="101">
+                            <span class="text-gray-500" vid="102">Landing &amp; Handling</span>
+                            <span class="text-white font-light" vid="103">$1,800.00</span>
+                        </div>
+                        <div class="pt-4 border-t border-white/5 flex justify-between items-end" vid="104">
+                            <span class="text-xs uppercase tracking-widest text-gold font-bold" vid="105">Total Est.</span>
+                            <span class="text-3xl font-light text-white" vid="106">$71,750.00</span>
+                        </div>
+                    </div>
+
+                    <p class="text-[10px] text-gray-600 uppercase tracking-widest leading-relaxed mb-8" vid="107">
+                        * Invoice will be sent to the primary email on file. Payment due 48 hours prior to departure.
+                    </p>
+
+                    <button class="w-full py-4 bg-gold text-charcoal font-bold uppercase tracking-widest text-xs hover:bg-white transition-all" vid="108">
+                        Download Itinerary PDF
+                    </button>
+                </div>
+
+                <div class="p-8 border-l-2 border-gold bg-white/5" vid="109">
+                    <h4 class="text-white text-sm font-bold uppercase tracking-widest mb-4" vid="110">Next Steps</h4>
+                    <ul class="space-y-4" vid="111">
+                        <li class="flex gap-3 text-sm text-gray-400" vid="112">
+                            <span class="text-gold font-bold" vid="113">01</span>
+                            <span vid="114">Verify passport details for all international travelers.</span>
+                        </li>
+                        <li class="flex gap-3 text-sm text-gray-400" vid="115">
+                            <span class="text-gold font-bold" vid="116">02</span>
+                            <span vid="117">Confirm final catering selections within 24 hours.</span>
+                        </li>
+                        <li class="flex gap-3 text-sm text-gray-400" vid="118">
+                            <span class="text-gold font-bold" vid="119">03</span>
+                            <span vid="120">Arrive at Teterboro FBO 20 minutes prior to departure.</span>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+
+        <div class="mt-20 pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8 animate-fade-in-up" style="animation-delay: 0.3s;" vid="121">
+            <div class="flex items-center gap-6" vid="122">
+                <div class="flex -space-x-3" vid="123">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&amp;w=100&amp;auto=format&amp;fit=crop" class="w-12 h-12 rounded-full border-2 border-charcoal object-cover" alt="Captain" vid="124">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&amp;w=100&amp;auto=format&amp;fit=crop" class="w-12 h-12 rounded-full border-2 border-charcoal object-cover" alt="First Officer" vid="125">
+                </div>
+                <div vid="126">
+                    <span class="block text-xs uppercase tracking-widest text-gold font-bold" vid="127">Your Flight Crew</span>
+                    <span class="text-sm text-gray-400" vid="128">Capt. Haas &amp; FO Mitchell assigned.</span>
+                </div>
+            </div>
+            
+            <div class="flex gap-4" vid="129">
+                <a href="#" class="px-6 py-3 border border-white/10 text-white text-xs uppercase tracking-widest hover:bg-white/5 transition-all" vid="130">Modify Flight</a>
+                <a href="#" class="px-6 py-3 border border-white/10 text-white text-xs uppercase tracking-widest hover:bg-white/5 transition-all" vid="131">Contact Support</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-black py-12 border-t border-white/5" vid="132">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6" vid="133">
+            <p class="text-gray-600 text-[10px] uppercase tracking-[0.3em]" vid="134">© 2026 HaasCharter · Part 135 Certified</p>
+            <div class="flex gap-8" vid="135">
+                <a href="#" class="text-gray-600 text-[10px] uppercase tracking-widest hover:text-gold transition-colors" vid="136">Safety Standard</a>
+                <a href="#" class="text-gray-600 text-[10px] uppercase tracking-widest hover:text-gold transition-colors" vid="137">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+
+</body></html>
