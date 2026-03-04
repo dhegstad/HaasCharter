@@ -75,15 +75,15 @@ const specs: Spec[] = [
 
 const photos = [
   {
-    src: "https://images.unsplash.com/photo-1540962351504-03099e0a754b?q=80&w=2532&auto=format&fit=crop",
+    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/P4-PPP_Gulfstream_G550_GLF5_%2815092435175%29.jpg/1920px-P4-PPP_Gulfstream_G550_GLF5_%2815092435175%29.jpg",
+    label: "G550 Exterior",
+  },
+  {
+    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Interior_of_Gulfstream_G550_cabin_with_passengers.JPG/1920px-Interior_of_Gulfstream_G550_cabin_with_passengers.JPG",
     label: "Main Cabin",
   },
   {
-    src: "https://images.unsplash.com/photo-1561131668-f635d4bef946?q=80&w=2070&auto=format&fit=crop",
-    label: "Fine Dining",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1583413230540-ddf90681a8f8?q=80&w=2070&auto=format&fit=crop",
+    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Gulfstream_G550_cockpit.JPG/1920px-Gulfstream_G550_cockpit.JPG",
     label: "Flight Deck",
   },
 ];

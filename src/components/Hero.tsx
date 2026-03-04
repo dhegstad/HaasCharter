@@ -10,7 +10,7 @@ export default function Hero() {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1540962351504-03099e0a754b?q=80&w=2532&auto=format&fit=crop')",
+            "url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/P4-PPP_Gulfstream_G550_GLF5_%2815092435175%29.jpg/1920px-P4-PPP_Gulfstream_G550_GLF5_%2815092435175%29.jpg')",
         }}
       />
       <div className="absolute inset-0 bg-gradient-to-r from-charcoal/90 via-charcoal/40 to-transparent" />
